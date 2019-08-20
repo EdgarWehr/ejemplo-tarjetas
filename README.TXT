@@ -19,3 +19,16 @@ Las operaciones que se podran hacer son:
 
 AUTHORS:Edgar Alberto Flores Wehr
 USER INSTRUCTIONS:
+
+Notas: Unicamente los metodos de la clase pueden acceder a las variables del objeto.
+
+Existen diferentes niveles de acceso: publico, privado y protegido.
+Por lo general las variables del objeto deben ser privados
+y los metodos y las clases publicos.
+
+Como resultado de la encapsulacion existen dos tipos de metodos:
+1) Metodos de modificacion Modifican el valor actual de las variables 
+del objeto.
+
+2) Metodos de accesos Perimten acceder a las variables del objeto pero 
+no las modifican

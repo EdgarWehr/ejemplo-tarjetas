@@ -1,13 +1,20 @@
-class Tarjeta
+public class Tarjeta
 {
-    int saldo;
+    private int saldo;
     
-    void depositar(int unaCantidad)
+    public Tarjeta(int saldoInicial)
     {
-        saldo = saldo + unaCantidad;
+        saldo = saldoInicial;
     }
     
-    void retirar(int unaCantidad)
+    public void depositar(int unaCantidad)
+    {
+        if(unaCantidad >= 0){
+            saldo = saldo + unaCantidad;
+        }
+    }
+    
+    public void retirar(int unaCantidad)
     {
         if(unaCantidad >= 0 && unaCantidad <= saldo)
         {
@@ -15,7 +22,7 @@ class Tarjeta
         }
     }
     
-    int consultar()
+    public int consultar()
     {
         return saldo;
     }
